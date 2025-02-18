@@ -14,7 +14,7 @@ app.post('/signup',(req,res)=>{
        return res.status(400).send("Email cannot be empty")
     }    
     if(!(password.length > 8 && password.length <=16)){
-      return  res.status(400).send("Paswword length should be greater than or less than or equal to 16 ")
+      return  res.status(400).send("Paswword length should be greater than 8 or less than or equal to 16 ")
     }
 })
 app.listen(Port,()=>{
